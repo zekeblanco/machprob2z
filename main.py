@@ -144,7 +144,6 @@ elif (choice == 'Iteration') and choice2 == ('Secant'):
     df.index = np.arange(1, len(df) + 1)
     st.write(df)
 else:
-
     c = N(fbsympi, subs={x: a})
     d = N(fbsympi, subs={x: b})
     ee = (b - ((d)*(b-a)/(d-c)))
@@ -159,7 +158,11 @@ else:
     }
     df = pd.DataFrame(data)
 
-    while error <= f:
+    fstr = str(f)
+    st.write(fstr)
+    test = float(fstr)
+    
+    while error <= test:
         tempa = b
         tempb = ee
 
