@@ -158,9 +158,9 @@ else:
     }
     df = pd.DataFrame(data)
 
-    fstr = str(f)
-    st.write(fstr)
-    test = float(fstr)
+    test = str(f)
+    tester = float(test)
+    st.write(error)
     
     while error <= test:
         tempa = b
