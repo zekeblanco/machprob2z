@@ -43,10 +43,10 @@ if (choice == 'Iteration') and choice2 == ('Bisection'):
     df = pd.DataFrame(data)
 
     while count <= iter:
-        if d < 0:
-            b = c
-        else:
+        if N(fbsympi, subs={x: a})*d > 0:
             a = c
+        elif N(fbsympi, subs={x: b})*d > 0:
+            b = c
 
         count += 1
         c = (a + b) / 2
@@ -82,7 +82,7 @@ elif (choice == 'Error') and choice2 == ('Bisection'):
     while error <= ee:
         if N(fbsympi, subs={x: a})*d > 0:
             a = c
-        elif N(fbsympi, subs={x: b})*d > 0
+        elif N(fbsympi, subs={x: b})*d > 0:
             b = c
 
         c = (a + b) / 2
