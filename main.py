@@ -158,7 +158,7 @@ else:
     }
     df = pd.DataFrame(data)
     
-    while f >= error:
+    while error <= f:
         tempa = b
         tempb = ee
 
