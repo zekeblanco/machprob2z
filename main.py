@@ -9,7 +9,7 @@ e = symbols('e')
 pi = symbols('pi')
 print(math.pi)
 
-st.title("Machine Problem 2 Part 2")
+st.title("Bisection/Secant Method Calculator")
 fnb = st.text_input('Enter the function: ')
 a = st.number_input("Enter a", value=0.01)
 b = st.number_input("Enter b", value=0.01)
