@@ -80,10 +80,10 @@ elif (choice == 'Error') and choice2 == ('Bisection'):
     df = pd.DataFrame(data)
 
     while error <= ee:
-        if d < 0:
-            b = c
-        else:
+        if N(fbsympi, subs={x: a})*d > 0:
             a = c
+        elif N(fbsympi, subs={x: b})*d > 0
+            b = c
 
         c = (a + b) / 2
         d = N(fbsympi, subs={x: c})
