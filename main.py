@@ -157,12 +157,8 @@ else:
         "|Xi+1 - Xi|": [f],
     }
     df = pd.DataFrame(data)
-
-    test = str(f)
-    tester = float(test)
-    st.write(test)
     
-    while error <= tester:
+    while f <= error:
         tempa = b
         tempb = ee
 
