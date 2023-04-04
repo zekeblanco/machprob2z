@@ -105,7 +105,6 @@ elif (choice == 'Error') and choice2 == ('Bisection'):
 
 elif (choice == 'Iteration') and choice2 == ('Secant'):
     count = 2
-    iter = st.number_input("Enter number of iterations ")
     c = N(fbsympi, subs={x: a})
     d = N(fbsympi, subs={x: b})
     ee = (b - ((d) * (b - a) / (d - c)))
@@ -159,10 +158,6 @@ else:
         "|Xi+1 - Xi|": [f],
     }
     df = pd.DataFrame(data)
-
-    test = str(f)
-    tester = float(test)
-    st.write(error)
 
     while error <= f:
         tempa = b
