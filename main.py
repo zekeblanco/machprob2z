@@ -160,7 +160,7 @@ else:
 
     test = str(f)
     tester = float(test)
-    st.write(error)
+    st.write(test)
     
     while error <= tester:
         tempa = b
