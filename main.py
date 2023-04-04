@@ -162,7 +162,7 @@ else:
     tester = float(test)
     st.write(error)
     
-    while error <= test:
+    while error <= tester:
         tempa = b
         tempb = ee
 
